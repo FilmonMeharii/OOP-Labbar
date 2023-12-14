@@ -1,11 +1,8 @@
 #ifndef MINAFUNKTIONER_H
 #define MINAFUNKTIONER_H
 
+#include <string>
 
-class minafunktioner
-{
-public:
-    minafunktioner();
-};
+bool boolFranAnvandare(const std::string &txt);
 
 #endif // MINAFUNKTIONER_H
