@@ -25,13 +25,26 @@ std::string Kort::text() const
 
 std::string Kort::fargstrang() const
 {
+    if(m_farg){
+        if(klover)
+            return "Klover";
+        if(ruter)
+            return "Ruter";
+        if(hjarter)
+            return "Hjarter";
+        if(spader)
+            return "Spader";
+    }else
+        return "Okand farg";
+
+
     switch (m_farg) {
     case klover:
         return "Klover";
     case ruter:
         return "Ruter";
     case hjarter:
-    return "Hjarter";
+        return "Hjarter";
     case spader:
         return "Spade";
     default:
