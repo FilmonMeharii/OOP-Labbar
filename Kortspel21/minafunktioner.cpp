@@ -5,10 +5,10 @@
 using namespace std;
 
 bool boolFranAnvandare(const string &txt){
-    cout <<txt<< "Vill du ha nytt kort? Ja/Nej: ";
+    cout <<txt;
     string svar;
     cin >> svar;
-    if(svar=="ja"||"Ja"||"JA")
+    if(svar=="ja"|| svar=="Ja"|| svar =="JA" || svar =="j")
         return true;
     return false;
 }
