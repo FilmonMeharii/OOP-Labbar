@@ -16,6 +16,9 @@ public:
 
     void message(const std::string& str);
 
+    static int s_aktuelltDjup;
+    static Outputtype s_utskriftsMetod;
+
 private:
     std::string m_funktionsnamn;
     std::string indentering();
