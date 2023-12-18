@@ -2,6 +2,8 @@
 #include "trace.h"
 
 using namespace std;
+int Trace::s_aktuelltDjup = 0;
+Trace::Outputtype Trace::s_utskriftsMetod = Trace::output_qdebug;
 
 int fakultet(int n){
     tracemex(to_string(n));
