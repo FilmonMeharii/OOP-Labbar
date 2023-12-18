@@ -29,3 +29,10 @@ void Cykel::korFrammat(float antalKm)
 {
     cout << "Cykeln: trampa framot " << antalKm << " km"<<endl;
 }
+
+
+void Cykel::skrivUtInfo()
+{
+    cout << "Fordonet ar en cykel." << endl;
+    Super::skrivUtInfo();
+}

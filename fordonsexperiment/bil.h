@@ -14,6 +14,10 @@ public:
     void svangVanster() override;
     void svangHoger() override;
     void korFrammat(float antalKm) override;
+
+    void skrivUtInfo() override;
+private:
+    typedef Fordon Super;
 };
 
 #endif // BIL_H

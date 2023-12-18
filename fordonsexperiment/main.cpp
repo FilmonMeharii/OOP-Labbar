@@ -5,8 +5,10 @@
 
 using namespace std;
 
+void skrivUtInfo();
 void akenRunda(Fordon &fordon){
     cout << "Aker en runda------------"<<endl;
+    skrivUtInfo();
     fordon.korFrammat(2);
     fordon.indikeraKommandeSvang();
     fordon.svangHoger();
@@ -15,6 +17,7 @@ void akenRunda(Fordon &fordon){
     fordon.korFrammat(0.5);
     fordon.svangVanster();
     fordon.korFrammat(0.1);
+
     cout << "Avslutar ak."<<endl << endl;
 }
 void ingangTillTestaFordon(){

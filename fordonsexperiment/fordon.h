@@ -6,13 +6,15 @@ class Fordon
 {
 public:
     Fordon(int antalHjul);
-    virtual void pakallaUppmarksamhet();
-    virtual void indikeraKommandeSvang();
-    virtual void svangVanster();
-    virtual void svangHoger();
-    virtual void korFrammat(float antalKm);
+    virtual void pakallaUppmarksamhet() = 0;
+    virtual void indikeraKommandeSvang() = 0;
+    virtual void svangVanster() = 0;
+    virtual void svangHoger() = 0;
+    virtual void korFrammat(float antalKm) = 0;
 
-private:
+    virtual void skrivUtInfo();
+
+    protected:
     int m_antalHjul;
 };
 

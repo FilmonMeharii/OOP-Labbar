@@ -31,3 +31,9 @@ void Bil::korFrammat(float antalKm)
     cout << "Bilen: kor framot "<< antalKm<< " km "<<endl;
 
 }
+
+void Bil::skrivUtInfo()
+{
+    cout << "Fordonet ar en bil"<<endl;
+    Super::skrivUtInfo();
+}
