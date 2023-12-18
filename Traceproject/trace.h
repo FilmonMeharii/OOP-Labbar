@@ -2,6 +2,10 @@
 #define TRACE_H
 #include <string>
 
+#define traceme Trace traceObject(__func__);
+#define tracemex(extra) Trace traceObject(__func__, extra);
+#define tracemsg(meddelande) traceObject.message(meddelande);
+
 class Trace
 {
 public:
