@@ -4,6 +4,7 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += \
+        abstraktspelare.cpp \
         bankir.cpp \
         kort.cpp \
         korthand.cpp \
@@ -13,6 +14,7 @@ SOURCES += \
         spelare.cpp
 
 HEADERS += \
+    abstraktspelare.h \
     bankir.h \
     kort.h \
     korthand.h \

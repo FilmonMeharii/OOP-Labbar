@@ -5,7 +5,7 @@ Bankir::Bankir()
     m_pSpelare=nullptr;
 }
 
-void Bankir::registreraSpelare(Spelare *pSpelare)
+void Bankir::registreraSpelare(AbstraktSpelare *pSpelare)
 {
     m_pSpelare = pSpelare;
 }
