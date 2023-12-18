@@ -2,6 +2,7 @@
 #define ABSTRAKTSPELARE_H
 #include "kort.h"
 #include "korthand.h"
+
 class AbstraktSpelare
 {
 public:
