@@ -53,3 +53,9 @@ build-experimentMedArv-Desktop_Qt_6_2_0_MinGW_64_bit-Debug/Makefile
 build-felhantering-Desktop_Qt_6_2_0_MinGW_64_bit-Debug/.qmake.stash
 build-felhantering-Desktop_Qt_6_2_0_MinGW_64_bit-Debug/Makefile
 build-felhantering-Desktop_Qt_6_2_0_MinGW_64_bit-Debug/Makefile.Debug
+build-FilmonNotepad-Desktop_Qt_6_2_0_MinGW_64_bit-Debug/Makefile.Debug
+build-FilmonNotepad-Desktop_Qt_6_2_0_MinGW_64_bit-Debug/debug/moc_predefs.h
+build-FilmonNotepad-Desktop_Qt_6_2_0_MinGW_64_bit-Debug/debug/moc_filmonsmainwindow.cpp
+build-FilmonNotepad-Desktop_Qt_6_2_0_MinGW_64_bit-Debug/.qmake.stash
+build-FilmonNotepad-Desktop_Qt_6_2_0_MinGW_64_bit-Debug/Makefile
+build-FilmonNotepad-Desktop_Qt_6_2_0_MinGW_64_bit-Debug/ui_filmonsmainwindow.h
