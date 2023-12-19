@@ -8,7 +8,7 @@ int main(int argc, char *argv[])
     FilmonsMainWindow w;
     w.show();
 
-    Grafikyta grafikyta;
-    grafikyta.show();
+//    Grafikyta grafikyta;
+//    grafikyta.show();
     return a.exec();
 }
