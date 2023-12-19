@@ -2,9 +2,11 @@
 
 using namespace std;
 void provaFodelsear();
+void testIntFranString();
 int main()
 {
     cout << "Hello World!" << endl;
-    provaFodelsear();
+    testIntFranString();
+    //provaFodelsear();
     return 0;
 }
