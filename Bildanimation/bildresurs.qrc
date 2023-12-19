@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>bilder/baksidan.png</file>
+        <file>bilder/Kungenframsida.png</file>
+    </qresource>
+</RCC>
