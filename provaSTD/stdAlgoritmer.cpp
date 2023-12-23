@@ -80,8 +80,34 @@ void provaSort(){
     sort(begin(str), end(str), aForeB);
     cout << "ProvaSort B:"<<str<<endl;
 }
+struct AB{
+    int m_a;
+    int m_b;
+};
+ostream& operator <<(ostream &o, const AB &ab){
+    o<< "(" << ab.m_a<<","<<ab.m_b<<")";
+    return o;
+}
+void provaSortOchStableSort(){
+    vector<AB> data;
+    auto generateRandom = [](){return AB{rand()%100, rand()%2};};
+    auto ite = back_inserter(data);
+    generate_n(ite, 100, generateRandom);
+    skrivHorisontell("fore sort",data);
+
+    auto villkorA = [](const AB &ab1, const AB &ab2){return ab1.m_a<ab2.m_a;};
+    auto villkorB = [](const AB &ab1, const AB &ab2){return ab1.m_b<ab2.m_b;};
+
+    sort(begin(data), end(data), villkorA);
+    skrivHorisontell("efter sort A:", data);
+
+    stable_sort(begin(data), end(data), villkorB );
+    skrivHorisontell("efter sort B:", data);
+}
+
 void ingangTillStdAlgoritmer(){
-    provaSort();
+    provaSortOchStableSort();
+    //provaSort();
     //provaGenerate_n2();
     //provaGenerate_n();
     //provaIota();
