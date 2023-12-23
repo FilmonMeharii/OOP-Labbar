@@ -24,7 +24,6 @@ void provaTransorm1(){
 
     skrivHorisontell("efter transform:", vec);
 }
-
 void provaTransform2(){
     vector<int>vec1{3,7,4,9,3,1,2,4,9,5};
     vector<int>vec2(vec1.size());
@@ -38,8 +37,23 @@ void provaTransform2(){
 
     skrivHorisontell("vec3",vec3);
 }
+void provaIota(){
+    vector<int> vec(10);
+    skrivHorisontell("Prova iota A:", vec);
+    iota(begin(vec),end(vec),42);
+    skrivHorisontell("prova iota A:",vec);
 
+    skrivHorisontell("prova iota B:", vec);
+    iota(begin(vec), end(vec),0.9);
+    skrivHorisontell("Prova iota B", vec);
+
+    cout << endl;
+    string str( 'z'-'a'+1, ' ' );
+    iota( begin(str), end(str), 'a');
+    cout << str << endl;
+}
 void ingangTillStdAlgoritmer(){
+    provaIota();
     //provaTransorm1();
-    provaTransform2();
+    //provaTransform2();
 }
