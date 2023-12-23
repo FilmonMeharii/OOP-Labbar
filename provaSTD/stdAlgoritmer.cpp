@@ -25,6 +25,21 @@ void provaTransorm1(){
     skrivHorisontell("efter transform:", vec);
 }
 
+void provaTransform2(){
+    vector<int>vec1{3,7,4,9,3,1,2,4,9,5};
+    vector<int>vec2(vec1.size());
+    vector<int>vec3;
+
+    transform(vec1.begin(), vec1.end(), vec2.begin(),[](int x) {return x*3;});
+
+    transform(vec1.begin(), vec1.end(), back_inserter(vec3), [](int x) {return x*5;});
+
+    skrivHorisontell("vec2", vec2);
+
+    skrivHorisontell("vec3",vec3);
+}
+
 void ingangTillStdAlgoritmer(){
-    provaTransorm1();
+    //provaTransorm1();
+    provaTransform2();
 }
