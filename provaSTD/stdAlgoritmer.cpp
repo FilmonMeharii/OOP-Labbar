@@ -70,8 +70,19 @@ void provaGenerate_n2(){
     generate_n(back_inserter(data),antalElement,[n=0] ()mutable {return n++;});
     skrivHorisontell("data:",data);
 }
+void provaSort(){
+    string str = "Here is a pretty large number of ASCII-characters";
+
+    sort(begin(str), end(str));
+    cout << "provaSort A:" << str << endl;
+
+    auto aForeB = [](char a, char b){return  a>b;};
+    sort(begin(str), end(str), aForeB);
+    cout << "ProvaSort B:"<<str<<endl;
+}
 void ingangTillStdAlgoritmer(){
-    provaGenerate_n2();
+    provaSort();
+    //provaGenerate_n2();
     //provaGenerate_n();
     //provaIota();
     //provaTransorm1();
