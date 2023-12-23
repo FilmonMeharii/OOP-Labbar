@@ -104,9 +104,21 @@ void provaSortOchStableSort(){
     stable_sort(begin(data), end(data), villkorB );
     skrivHorisontell("efter sort B:", data);
 }
+void provaRemoveIf(){
+    vector<int>data(10);
+    iota(begin(data), end(data), 0);
+    skrivHorisontell("fore remove", data);
 
+    auto villkor = [](int i){return  i<5;};
+    auto iteFrom = remove_if(begin(data), end(data), villkor);
+    skrivHorisontell("efter remove", data);
+    data.erase(iteFrom,end(data));
+
+    skrivHorisontell("efter remove pa riktigt",data);
+}
 void ingangTillStdAlgoritmer(){
-    provaSortOchStableSort();
+    provaRemoveIf();
+    //provaSortOchStableSort();
     //provaSort();
     //provaGenerate_n2();
     //provaGenerate_n();
