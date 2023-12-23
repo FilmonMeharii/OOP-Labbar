@@ -10,9 +10,14 @@ class Bildyta : public QWidget
 public:
     explicit Bildyta(QWidget *parent = nullptr);
 
+    void visaFramsidan(bool visaFram);
+
+signals:
+
 protected:
     void mousePressEvent(QMouseEvent *event) override;
     void paintEvent(QPaintEvent *event)override;
+
 
 private:
     QLabel *m_pLabel;

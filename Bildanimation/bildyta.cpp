@@ -18,6 +18,15 @@ Bildyta::Bildyta(QWidget *parent) : QWidget(parent)
     m_pLabel->resize(100,100);
 }
 
+void Bildyta::visaFramsidan(bool visaFram)
+{
+    if(visaFram){
+        m_pLabel->setPixmap(m_framsida);
+    }else{
+        m_pLabel->setPixmap(m_baksida);
+    }
+}
+
 void Bildyta::mousePressEvent(QMouseEvent *event)
 {
     QRect rc = m_pLabel->geometry();
@@ -32,9 +41,10 @@ void Bildyta::mousePressEvent(QMouseEvent *event)
     pMoveAnimation->setDuration(antalMillisekunder);
     pMoveAnimation->setStartValue(rc);
     pMoveAnimation->setEndValue(rcDestination);
-    //pMoveAnimation->setEasingCurve(QEasingCurve::OutElastic);
+    pMoveAnimation->setEasingCurve(QEasingCurve::OutElastic);
     pMoveAnimation->start();
 }
+
 
 void Bildyta::paintEvent(QPaintEvent *event)
 {
