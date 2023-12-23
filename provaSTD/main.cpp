@@ -4,13 +4,14 @@ using namespace std;
 
 void provIntervall();
 void ingangTillStdAlgoritmer();
-
+void provaContainrar();
 int main()
 {
     cout << "Hello World!" << endl;
 
+    provaContainrar();
     //provIntervall();
-    ingangTillStdAlgoritmer();
+    //ingangTillStdAlgoritmer();
 
     return 0;
 }
