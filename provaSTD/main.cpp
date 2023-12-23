@@ -5,11 +5,14 @@ using namespace std;
 void provIntervall();
 void ingangTillStdAlgoritmer();
 void provaContainrar();
+void provaAnagram();
+
 int main()
 {
     cout << "Hello World!" << endl;
 
-    provaContainrar();
+    provaAnagram();
+    //provaContainrar();
     //provIntervall();
     //ingangTillStdAlgoritmer();
 
