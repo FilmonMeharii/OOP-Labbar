@@ -52,8 +52,28 @@ void provaIota(){
     iota( begin(str), end(str), 'a');
     cout << str << endl;
 }
+void provaGenerate_n(){
+    vector<int> fibsekvens;
+    auto ite = back_inserter(fibsekvens);
+    auto generator = [fore=0, forefore=0]() mutable{
+        int e= forefore+fore; forefore=fore; fore=e;
+        cout <<e<<" ";
+        return e;
+    };
+    generate_n(ite, 10, generator);
+    cout<<endl;
+    skrivHorisontell("fibsekvens:",fibsekvens);
+}
+void provaGenerate_n2(){
+    vector<int>data;
+    int antalElement = 10;
+    generate_n(back_inserter(data),antalElement,[n=0] ()mutable {return n++;});
+    skrivHorisontell("data:",data);
+}
 void ingangTillStdAlgoritmer(){
-    provaIota();
+    provaGenerate_n2();
+    //provaGenerate_n();
+    //provaIota();
     //provaTransorm1();
     //provaTransform2();
 }
