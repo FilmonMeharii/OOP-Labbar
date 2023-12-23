@@ -3,10 +3,14 @@
 using namespace std;
 
 void provIntervall();
+void ingangTillStdAlgoritmer();
+
 int main()
 {
     cout << "Hello World!" << endl;
 
-    provIntervall();
+    //provIntervall();
+    ingangTillStdAlgoritmer();
+
     return 0;
 }
