@@ -41,6 +41,7 @@ void Spelplan::loadImages()
     ded.load(":/bilder/redDot.png");
 }
 void Spelplan::initGame(){
+    score = 0;
     dots = 10;
     for (int z = 0; z < dots; z++) {
         x[z] = 50 - z * 10;
@@ -74,6 +75,8 @@ void Spelplan::doDrawing(){
 
     if (inGame) {
         qp.drawImage(apple_x, apple_y, apple);
+        QString scoreText="Score: " + QString::number(score);
+        qp.drawText(10, 10, scoreText);
 
         for (int z = 0; z < dots; z++) {
             if (z == 0) {
